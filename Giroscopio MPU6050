@@ -1,5 +1,4 @@
 
-
 #include <MPU6050_tockn.h>
 #include <Wire.h>
 
@@ -15,8 +14,6 @@ void setup() {
   mpu6050.begin();
   mpu6050.calcGyroOffsets(false);
   pinMode(10, OUTPUT); 
-
- 
   pinMode(11, OUTPUT); 
 }
 
@@ -36,8 +33,6 @@ void loop() {
   }else{
    digitalWrite(11, LOW);
   }
-
-  
 
 
 }
